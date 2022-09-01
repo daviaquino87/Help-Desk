@@ -1,61 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>App Help Desk</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-      .card-consultar-chamado {
-        padding: 30px 0 0 0;
-        width: 100%;
-        margin: 0 auto;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="./public/css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultar Chamados</title>
   </head>
-
   <body>
-
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
-      </a>
+    <nav class="navbar text-white" style="background-color: #9400d3">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-white">Consultar Chamados</span>
+      </div>
     </nav>
-
-    <div class="container">    
-      <div class="row">
-
-        <div class="card-consultar-chamado">
-          <div class="card">
-            <div class="card-header">
-              Consulta de chamado
+    <div class="container mt mt-5">
+      <div class="col align-self-cente">
+        <div class="card conteudo">
+          <div class="card-head text-start d-flex justify-content-between p-2">
+            <h3 style="color: #9400d3">Chamados</h3>
+            <button class='btn btn-warning'>Voltar  </button>
+          </div>
+          <div class="card-body">
+            <div class="card mb-3 bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Título do chamado...</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
+                <p class="card-text">Descrição do chamado...</p>
+              </div>
             </div>
-            
-            <div class="card-body">
-              
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
-
-                </div>
-              </div>
-
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
-
-                </div>
-              </div>
-
-              <div class="row mt-5">
-                <div class="col-6">
-                  <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
-                </div>
+            <div class="card mb-3 bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Título do chamado...</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
+                <p class="card-text">Descrição do chamado...</p>
               </div>
             </div>
           </div>

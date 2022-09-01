@@ -100,7 +100,7 @@ form{
 			<div class="col-md-8 col-xs-12 col-sm-12 login_form ">
 				<div class="container-fluid">
 					<div class="row">
-						<h2>Login</h2>
+						<h2 class='mt-4 ml-4'>Login</h2>
 					</div>
 					<div class="row">
 						<form control="" class="form-group">
