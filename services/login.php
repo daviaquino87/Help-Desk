@@ -25,7 +25,7 @@ foreach ($usuarios as $usuario) {
         $_SESSION['autenticado'] = 'SIM';
         header('Location: http://localhost/php/HelpDask/public/views/home.php');
     } else {
-        $_SESSION['autenticado'] = 'SIM';
+        $_SESSION['autenticado'] = 'NAO';
         header('Location: http://localhost/php/HelpDask/public/views/index.php?Error');
     }
 }
