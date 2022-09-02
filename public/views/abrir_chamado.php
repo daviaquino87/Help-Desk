@@ -1,4 +1,4 @@
-<?php require_once '../../services/validation.php'?>
+<?php require_once '../../services/usuario/validation.php'?>
 
 
 <html>
@@ -37,15 +37,15 @@
               <div class="row">
           <div class="col">
 
-            <form>
+            <form method='post' action='../../services/chamado/chamados.php'>
               <div class="form-group">
                 <label>Título</label>
-                <input type="text" class="form-control" placeholder="Título">
+                <input type="text" class="form-control" name='titulo' placeholder="Título">
               </div>
 
               <div class="form-group">
                 <label>Categoria</label>
-                <select class="form-control">
+                <select class="form-control" name='categoria'>
                   <option>Criação Usuário</option>
                   <option>Impressora</option>
                   <option>Hardware</option>
@@ -56,7 +56,7 @@
 
               <div class="form-group">
                 <label>Descrição</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea class="form-control"  name='descricao' rows="3"></textarea>
               </div>
 
               <div class="row mt-5">

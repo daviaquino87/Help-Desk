@@ -9,11 +9,6 @@ $pass = $_POST['password'];
 //usuarios setados estaticamente
 $usuarios = [
     ['email' => 'admin@teste.com', 'password' => 'batataFrita'],
-    ['email' => 'admin@teste.com', 'password' => 'batataFrita'],
-    ['email' => 'admin@teste.com', 'password' => 'batataFrita'],
-    ['email' => 'davi@teste.com', 'password' => 'batataFrita'],
-    ['email' => 'admin@teste.com', 'password' => 'batataFrita'],
-    ['email' => 'admin@teste.com', 'password' => 'batataFrita'],
 ];
 
 foreach ($usuarios as $usuario) {
