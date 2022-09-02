@@ -1,9 +1,19 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
+    header('Location: http://localhost/php/HelpDask/public/views/index.php?Error');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="../css/style.css" rel="stylesheet" />
+    <script src="../js/script.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +34,7 @@
         <div class="card conteudo">
           <div class="card-head text-start d-flex justify-content-between p-2">
             <h3 style="color: #9400d3">Chamados</h3>
-            <button class='btn btn-warning'>Voltar  </button>
+            <button class='btn btn-warning' onClick={voltar()}> Voltar </button>
           </div>
           <div class="card-body">
             <div class="card mb-3 bg-light">

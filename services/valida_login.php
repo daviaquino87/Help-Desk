@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $Usuario_autenticado = false;
 
@@ -21,8 +22,10 @@ foreach ($usuarios as $usuario) {
     }
 
     if ($Usuario_autenticado) {
-        echo 'Bem vindo!';
+        $_SESSION['autenticado'] = 'SIM';
+        header('Location: http://localhost/php/HelpDask/public/views/home.php');
     } else {
-        header('Location: http://localhost/php/HelpDask/public/views/index.php?Error=1');
+        $_SESSION['autenticado'] = 'SIM';
+        header('Location: http://localhost/php/HelpDask/public/views/index.php?Error');
     }
 }
