@@ -19,11 +19,7 @@ if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
     <title>home</title>
 </head>
 <body>
-<nav class="navbar text-white" style="background-color: #9400d3;" >
-    <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1 text-white">Help Dask</span>
-    </div>
-</nav>
+<?php include '../../partials/navBar.php';?>
     <div class="container text-center mt mt-5">
         <div class='col align-self-cente'>
             <div class="card conteudo">
