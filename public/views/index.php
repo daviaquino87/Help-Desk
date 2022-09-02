@@ -105,7 +105,7 @@ form{
 						<h2 class='mt-4 ml-4'>Login</h2>
 					</div>
 					<div class="row">
-						<form method='post' action='http://localhost/php/HelpDask/services/valida_login.php' class="form-group">
+						<form method='post' action='http://localhost/php/HelpDask/services/login.php' class="form-group">
 							<div class="row">
 								<input type="email" name="email" id="username" class="form__input" placeholder="E-mail">
 							</div>
