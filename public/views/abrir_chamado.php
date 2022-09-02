@@ -1,11 +1,5 @@
-<?php
-session_start();
+<?php require_once '../../services/validation.php'?>
 
-if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
-    header('Location: http://localhost/php/HelpDask/public/views/index.php?Error');
-}
-
-?>
 
 <html>
   <head>
@@ -28,7 +22,8 @@ if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
   </head>
 
   <body>
-  <?php include '../../partials/navBar.php';?>
+  <?php include_once '../../partials/navBar.php';?>
+
     <div class="container mt mt-5">
       <div class="col align-self-cente">
         <div class="card conteudo">
