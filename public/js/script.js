@@ -1,5 +1,5 @@
 function voltar() {
-  window.history.back();
+  window.location.href = "http://localhost/php/HelpDask/public/views/home.php";
 }
 
 function abrirChamado() {
