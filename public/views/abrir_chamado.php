@@ -29,7 +29,7 @@
         <div class="card conteudo">
           <div class="card-head text-start d-flex justify-content-between p-2">
             <h3 style="color: #9400d3">Novo chamado</h3>
-            <button class='btn btn-outline-primary' onClick={voltar()}> Voltar </button>
+            <button class='btn btn-outline-primary' onclick='voltar()'> Voltar </button>
           </div>
           <div class="card-body">
             <div class="card mb-3 bg-light">
@@ -37,15 +37,16 @@
               <div class="row">
           <div class="col">
 
-            <form method='post' action='../../services/chamado/chamados.php'>
+            <form method='post' action='../../services/chamado/chamados.php' onsubmit='salvar(event)'>
               <div class="form-group">
                 <label>Título</label>
-                <input type="text" class="form-control" name='titulo' placeholder="Título">
+                <input   type="text" class="form-control" name='titulo' id='title' placeholder="Título">
               </div>
 
               <div class="form-group">
                 <label>Categoria</label>
-                <select class="form-control" name='categoria'>
+                <select class="form-control" id='categoria' name='categoria'>
+                <option selected disabled value=''>Selecione</option>
                   <option>Criação Usuário</option>
                   <option>Impressora</option>
                   <option>Hardware</option>
@@ -56,7 +57,7 @@
 
               <div class="form-group">
                 <label>Descrição</label>
-                <textarea class="form-control"  name='descricao' rows="3"></textarea>
+                <textarea class="form-control" id='descricao'   name='descricao' rows="3"></textarea>
               </div>
 
               <div class="row mt-5">

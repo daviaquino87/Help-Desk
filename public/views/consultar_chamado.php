@@ -1,20 +1,6 @@
 <?php require_once '../../services/usuario/validation.php'?>
-<?php
-$chamados = [];
-if (file_exists('../../temp/chamados.txt')) {
-    $file = fopen('../../temp/chamados.txt', 'r');
+<?php require_once '../../services/chamado/consultar_chamados.php'?>
 
-    while (!feof($file)) {
-        $registro = fgets($file);
-        $chamados[] = $registro;
-    }
-
-    fclose($file);
-} else {
-
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -41,20 +27,14 @@ if (file_exists('../../temp/chamados.txt')) {
                   <button class="btn btn-warning" onClick="{voltar()}">Voltar</button>
                </div>
                <div class="card-body">
-                  <?php foreach ($chamados as $chamado) {
-    $chamado_dados = explode('#', $chamado);
-
-    if (count($chamado_dados) < 3) {
-        continue;
-    }
-    ?>
+                  <?php foreach ($chamados as $chamado) {?>
                   <div class="card mb-3 bg-light">
                      <div class="card-body">
-                        <h5 class="card-title"><?php echo $chamado_dados[0] ?></h5>
+                        <h5 class="card-title"><?php echo $chamado[0] ?></h5>
                         <h6 class="card-subtitle mb-2 text-muted">
-                           <?php echo $chamado_dados[1] ?>
+                           <?php echo $chamado[1] ?>
                         </h6>
-                        <p class="card-text"><?php echo $chamado_dados[2] ?></p>
+                        <p class="card-text"><?php echo $chamado[2] ?></p>
                      </div>
                   </div>
                   <?php }?>
