@@ -1,2 +1,2 @@
-teste#Hardware#asasa
-Erro no codigo#Software#aplicativo com erro
+2#Pc lento#Hardware#Coxinha
+3#Alex teste#Hardware#opa

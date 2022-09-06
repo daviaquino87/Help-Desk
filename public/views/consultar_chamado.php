@@ -30,11 +30,11 @@
                   <?php foreach ($chamados as $chamado) {?>
                   <div class="card mb-3 bg-light">
                      <div class="card-body">
-                        <h5 class="card-title"><?php echo $chamado[0] ?></h5>
+                        <h5 class="card-title"><?php echo $chamado[1] ?></h5>
                         <h6 class="card-subtitle mb-2 text-muted">
-                           <?php echo $chamado[1] ?>
+                           <?php echo $chamado[2] ?>
                         </h6>
-                        <p class="card-text"><?php echo $chamado[2] ?></p>
+                        <p class="card-text"><?php echo $chamado[3] ?></p>
                      </div>
                   </div>
                   <?php }?>

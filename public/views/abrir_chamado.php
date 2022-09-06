@@ -1,6 +1,5 @@
 <?php require_once '../../services/usuario/validation.php'?>
 
-
 <html>
   <head>
     <meta charset="utf-8" />
